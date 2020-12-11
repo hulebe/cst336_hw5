@@ -3,6 +3,7 @@ const app     = express();
 const fetch   = require("node-fetch");
 
 app.set("view engine", "ejs");
+app.use(express.static("public"));
 
 //routes
 app.get("/", async function(req, res, next){
