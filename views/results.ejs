@@ -1,0 +1,24 @@
+<%- include('partials/header.ejs') %>
+    <body>
+        
+        <main>
+            
+            <h1> Jokes </h1><br>
+            <p> <h3> What kind of joke would you like? </h3> </p>
+            <p> <h4> programming, knock-knock, general </h4> </p>
+            <form action="/search">
+                <input type="text" placeholder="Type keyword" name="keyword"/>
+                <br><br>
+                <button>Laugh</button>
+            </form> 
+            <hr>
+                <%= joke %>
+                <br>
+                <%= jokeAnswer %>
+            
+        </main>
+        
+<%- include('partials/footer.ejs') %>
+
+    </body>
+</html>
